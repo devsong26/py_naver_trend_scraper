@@ -3,8 +3,8 @@ class NaverTrendScraper:
         pass
 
     def scrape(self):
-        # resources에 있는 파일을 읽는다.
+        # TODO resources에 있는 파일을 읽는다.
 
 
-        # 라인 별로 워드를 네이버 api 호출한다.
+        # TODO 라인 별로 워드를 네이버 api 호출한다.
         pass

@@ -11,10 +11,15 @@ class FileUtil:
     @classmethod
     def get_file_path(cls):
         # This Side project used hard coded path
+        file_path = os.path.join(cls.get_root_dir_path(), cls.RESOURCES_PATH)
+        return file_path
+
+    @classmethod
+    def get_root_dir_path(cls):
         project_path = \
             os.path.dirname(
                 os.path.dirname(
                     os.path.dirname(
                         os.path.abspath(__file__))))
-        file_path = os.path.join(project_path, cls.RESOURCES_PATH)
-        return file_path
+        
+        return project_path
