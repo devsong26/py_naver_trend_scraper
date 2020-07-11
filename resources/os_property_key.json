@@ -1,0 +1,6 @@
+{
+  "db": {
+    "username": "MYSQL_DB_USERNAME",
+    "password": "MYSQL_DB_PASSWORD"
+  }
+}

@@ -22,6 +22,12 @@ class MyTestCase(unittest.TestCase):
         print(json_data)
         self.assertEqual(False, not json_data)
 
+    def test_get_os_property_key_json(self):
+        json_data = FileUtil.get_os_property_key_json()
+        db_json = json_data['db']
+        self.assertEqual(db_json["username"], "MYSQL_DB_USERNAME")
+        self.assertEqual(db_json["password"], "MYSQL_DB_PASSWORD")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -9,6 +9,5 @@ class NaverTrendScraper:
         word_json = FileUtil.get_json_from_file()
         print(word_json)
 
-        
         # TODO 라인 별로 워드를 네이버 api 호출한다.
         pass
