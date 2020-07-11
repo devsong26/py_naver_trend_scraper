@@ -17,6 +17,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(expected_file_path, rtn_file_path)
         pass
 
+    def test_get_json_from_file(self):
+        json_data = FileUtil.get_json_from_file()
+        print(json_data)
+        self.assertEqual(False, not json_data)
+
 
 if __name__ == '__main__':
     unittest.main()
