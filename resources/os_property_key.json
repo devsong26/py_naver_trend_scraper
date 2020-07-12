@@ -2,5 +2,9 @@
   "db": {
     "username": "MYSQL_DB_USERNAME",
     "password": "MYSQL_DB_PASSWORD"
+  },
+  "naver": {
+    "CLIENT_ID": "NAVER_CLIENT_ID",
+    "CLIENT_SECRET": "NAVER_CLIENT_SECRET"
   }
 }

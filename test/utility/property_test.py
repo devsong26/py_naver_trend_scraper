@@ -15,6 +15,14 @@ class MyTestCase(unittest.TestCase):
         print(db_username)
         print(db_password)
 
+        naver_key_json = self.os_key_json["naver"]
+        naver_client_id = \
+            PropertyUtil.get_value_from_os(naver_key_json["CLIENT_ID"])
+        naver_client_secret = \
+            PropertyUtil.get_value_from_os(naver_key_json["CLIENT_SECRET"])
+        print(naver_client_id)
+        print(naver_client_secret)
+
 
 if __name__ == '__main__':
     unittest.main()
